@@ -1,19 +1,19 @@
 
 
-print("Lista creada")
-animales = ["Perro", "Gato", "Loro", "Cocodrilo", "pez"]
+print("Conjunto creada")
+animales = {"Perro", "Gato", "Loro", "Cocodrilo", "pez"}
 print(animales)
 print("")
 
-print("Recorriendo la lista creada")
+print("Recorriendo la Conjunto creada")
 for animal in animales:
     print(f'Ahora la variable animal es igual a: {animal}')
 
 print("\n\n")
 
-print("2da lista creada")
+print("2da Conjunto creada")
 
-numeros = [1,2,3,4]
+numeros = {1,2,3,4}
 
 print(numeros)
 
@@ -23,23 +23,23 @@ for numero in numeros:
 
 print("\n\n")
 
-print("Para recorrer 2 listas a la vez, dejando de lado los ciclos anidados, se puede utilizar la funcion zip()")
+print("Para recorrer 2 Conjunto a la vez, dejando de lado los ciclos anidados, se puede utilizar la funcion zip()")
 
 for numero,animal in zip(numeros,animales):
-    print(f'Recorriendo lista 1: {numero}')
-    print(f'Recorriendo lista 2: {animal}')
+    print(f'Recorriendo Conjunto 1: {numero}')
+    print(f'Recorriendo Conjunto 2: {animal}')
 
 
 print("\n\n")
 
-#Forma no optima de recorrer una lista con su indice
+#Forma no optima de recorrer una Conjunto con su indice
 
 #for num in range(len(numeros)):
  #   print(numeros[num])
 
 
 
-#Forma correcta de recorrer una lista con su indice
+#Forma correcta de recorrer una Conjunto con su indice
 print("Usando enumerate")
 for num in enumerate(numeros):
     indice = num[0]
